@@ -1,0 +1,95 @@
+.bookUs{
+	&__top{
+		min-height: 240px !important;
+
+	}
+	&__row{
+		@include flexbox();
+		margin: 0 -15px;
+		flex-wrap:wrap;
+	}
+	&__column{
+		flex: 0 1 50%;
+		padding:0 15px;
+		margin-bottom: 30px;
+		@include flexbox();
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+	&__img{
+		border-radius: 10px 10px 0px 0px;
+		min-height: 191px;
+		background-size: cover !important; 
+		@include flexbox();
+		justify-content: center;
+		align-items: center;
+	}
+	&__item{
+		@include flexbox();
+		flex-direction:column;
+		@media (max-width: $md3+px) {
+			max-width: 340px;
+			margin: 0 auto;
+		}
+	}
+	&__name{
+		font-size: 44px;
+		line-height: 46px;
+		@include flexbox();
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		position: relative;
+		span{
+			position: relative;
+		}
+		&:before{
+			content:'';
+			background: url('../img/bookUs/romb.png') no-repeat;
+			width: 141px;
+			height: 75px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)
+		}
+	}
+	&__content{
+		background: #fff;
+		border-radius: 0px 0px 10px 10px;
+		padding:30px 35px 40px 35px;	
+
+	}
+	&__text{
+		font-family: 'Manrope';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 36px;
+		text-align: center;
+		color: #000000;
+		flex: 1 1 auto;
+		display: block;
+		background: #fff;
+		padding:30px 35px 20px 35px;
+	}
+	&__button{
+		text-align: center;
+		button{
+			background: rgba(0, 0, 0, 1);
+			color:#fff;
+			max-width: 254px;
+			font-size: 24px;
+			line-height: 26px;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			padding:0 30px;
+			&:after{
+				background: url(../img/btn-dec-b.png) no-repeat;
+				top: -26px;
+				right: -40px;
+			}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+.book {
+	&__top{
+		min-height: 240px !important;
+
+	}
+	&__row {
+		@include flexbox();
+		margin:0 -15px;
+	}
+	&__column {
+		flex: 0 1 50%;
+		padding: 0 15px;
+	}
+	&__img {
+		img{
+			border-radius: 10px;
+			object-fit:cover;
+			max-width: 100%;
+			margin-bottom: 32px;
+		}
+	}
+	&__desc {
+		font-size: 40px;
+		line-height: 42px;
+		color: #0C0B10;
+		margin-bottom: 10px;
+
+	}
+	&__text {
+		font-family: 'Manrope';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 29px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+	&__list {
+		padding-top: 40px;
+		li{
+			font-family: 'Manrope';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			color: #000000;
+			margin-bottom: 60px;
+			@include flexbox();
+			align-items:center;
+			span{
+				margin-right: 40px;
+			}
+		}
+	}
+	&__item {
+		background: #fff;
+		padding:50px;
+		border-radius: 10px;
+	}
+	&__form {
+	}
+	&__form-row {
+		@include flexbox();
+		margin:0 -15px;
+		padding-bottom: 10px;
+	}
+	&__wrap {
+		padding:0 15px;
+		flex: 0 1 50%;
+		&-f{
+			position: relative;
+			&:after{
+				content: "-";
+				position: absolute;
+				height: 1px;
+				right: -6px;
+				top: 50%;
+				font-size: 30px;
+				color: rgba(121, 101, 94, 1);
+
+			}
+		}
+		&-o{
+			flex:1 1 100%;
+		}
+		&-b{
+			flex: 0 1 80%;
+		}
+		label{
+			font-family: 'Manrope';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 29px;
+			color: #79655E;
+			padding-left: 15px;
+		}
+	}
+	&__button{
+		text-align: center;
+		width:100%;
+		padding-top: 30px;
+		button{
+			background: rgba(0, 0, 0, 1);
+			color:#fff;
+			font-size: 24px;
+			line-height: 26px;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			padding:0 30px;
+			width: 100%;
+			&:after{
+				background: url(../img/btn-dec-b.png) no-repeat;
+				position: absolute;
+				top: 50%;
+				left: 55%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%)
+			}
+		}
+	}
+	&__label{
+		display: block;
+	}
+	&__span{
+		font-size: 16px;
+		line-height: 18px;
+		text-align: center;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #0C0B10;
+		display: block;
+		padding:15px 0;
+	}
+	&__btn-nf{
+		margin: 0 -5px;
+	}
+	&__btn-n{
+		text-align: center;
+		padding:0 5px;
+		button{
+			height: 55px;
+			padding: 0 47px;
+			border: 0.624428px solid #0C0B10 !important;
+			line-height: 26px;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: #0C0B10;
+		}
+	}
+}
+
