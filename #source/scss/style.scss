@@ -76,7 +76,7 @@ body {
 //@import "datepicker.scss";
 //@import "fontawesome.scss";
 //@import "popover.min.scss";
-//@import "baguetteBox.scss";
+@import "baguetteBox.scss";
 //@import "pagging.scss";
 //@import "icons.scss";
 @import "header.scss";
@@ -86,6 +86,7 @@ body {
 @import "bookWithUs.scss";
 @import "book.scss";
 
+@import "packageInternal.scss";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -168,9 +169,7 @@ body {
 			background: url('../img/btn-dec.png') no-repeat;
 			width: 280px;
 			height: 115px;
-			@media (max-width: $md4+px) {
-				display: none;
-			}
+
 		}
 	}
 }
@@ -181,6 +180,9 @@ body {
 	text-align: center;
 	color: #0C0B10;
 	margin-bottom: 85px;
+	@media (max-width: $md4+px) {
+		font-size: 46px;
+	}
 
 }
 
@@ -193,4 +195,8 @@ body {
 .mainBody{
 	height: 100%;
 	background: linear-gradient(180deg, #E2D3CE 0%, #C9C8D8 30.73%, #D4D8C6 59.37%, #E2D3CE 100%);
+}
+
+.select-options-scroll{
+	cursor: pointer !important; 
 }

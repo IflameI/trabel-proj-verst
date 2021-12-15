@@ -60,7 +60,9 @@
 		background: #fff;
 		border-radius: 0px 0px 10px 10px;
 		padding:30px 35px 40px 35px;	
-
+		@media (max-width: $md4+px) {
+			padding: 30px 25px 40px 25px;
+		}
 	}
 	&__text{
 		font-family: 'Manrope';
@@ -73,22 +75,37 @@
 		display: block;
 		background: #fff;
 		padding:30px 35px 20px 35px;
+		@media (max-width: $md4+px) {
+			padding: 30px 25px 20px 25px;
+		}
 	}
 	&__button{
 		text-align: center;
+		padding-top: 30px;
+		position: relative;
+		&:before{
+			content: '';
+			background: url(../img/btn-dec-b.png) no-repeat;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			width: 234px;
+			height: 115px;
+		}
 		button{
+			min-width: 254px;
 			background: rgba(0, 0, 0, 1);
 			color:#fff;
-			max-width: 254px;
 			font-size: 24px;
 			line-height: 26px;
 			letter-spacing: 0.04em;
 			text-transform: uppercase;
-			padding:0 30px;
-			&:after{
-				background: url(../img/btn-dec-b.png) no-repeat;
-				top: -26px;
-				right: -40px;
+			padding:0 32px;
+			height: 55px;
+			@media (max-width: $md3+px) {
+				font-size: 18px;
 			}
 		}
 	}
