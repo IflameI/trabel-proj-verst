@@ -85,6 +85,38 @@
 		margin-right: unset;
 		opacity: 1;
 		transform:unset;
+		&-b{
+			text-align: center;
+			padding-top: 30px;
+			position: relative;
+			&:before{
+				content: '';
+				background: url(../img/btn-dec-b.png) no-repeat;
+				position: absolute;
+				top: 70%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+				width: 234px;
+				height: 115px;
+
+			}
+			button{
+				min-width: 254px;
+
+				background: rgba(0, 0, 0, 1);
+				color:#fff;
+				font-size: 24px;
+				line-height: 26px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				padding:0 39px;
+				height: 55px;
+				@media (max-width: $md3+px) {
+					font-size: 18px;
+				}
+			}
+		}
 		button{
 			background: #fff;
 			color: rgba(12, 11, 16, 1);
@@ -275,37 +307,7 @@
 		}
 
 	}
-	&__button{
-		text-align: center;
-		padding-top: 30px;
-		position: relative;
-		&:before{
-			content: '';
-			background: url(../img/btn-dec-b.png) no-repeat;
-			position: absolute;
-			top: 70%;
-			left: 50%;
-			margin-right: -50%;
-			transform: translate(-50%, -50%);
-			width: 234px;
-			height: 115px;
-		}
-		button{
-			min-width: 254px;
 
-			background: rgba(0, 0, 0, 1);
-			color:#fff;
-			font-size: 24px;
-			line-height: 26px;
-			letter-spacing: 0.04em;
-			text-transform: uppercase;
-			padding:0 39px;
-			height: 55px;
-			@media (max-width: $md3+px) {
-				font-size: 18px;
-			}
-		}
-	}
 
 }
 
@@ -594,6 +596,6 @@
 		line-height: 29px;
 		color: #000000;
 
-}
+	}
 }
 
