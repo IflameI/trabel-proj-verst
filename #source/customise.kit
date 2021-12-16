@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cusomise</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="all"
+	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"    />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- @import "header.kit" -->
+		<section class="customise">
+			<div class="customise__top mainTop">
+				<div class="container">
+					<h1 class="customise__title title">Customise trip</h1>
+				</div>
+			</div>
+			<div class="customise__body mainBody">
+				<div class="container">
+					<div class="customise__wrap">
+						<div class="packages__words">Customise</div>
+						<div class="customise__item">
+							<form class="book__form">
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-f">
+										<label>Location from</label>
+										<select name="form[]" class="book__select-loc">
+											<option value="" disabled selected = 'selected' hidden>Choose</option>
+											<option value="1">Place 1</option>
+											<option value="2">Place 2</option>
+											<option value="3">Place 3</option>
+										</select>
+									</div>
+									<div class="book__wrap">
+										<label>to</label>
+										<select name="form[]" class="book__select-loc">
+											<option value="" disabled selected = 'selected' hidden>Choose</option>
+											<option value="1">Place 1</option>
+											<option value="2">Place 2</option>
+											<option value="3">Place 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-f">
+										<label>Dates</label>
+										<div class="input-date">
+											<input value = '26-04-22' class = 'input datepicker' type="text" >
+										</div>
+									</div>
+									<div class="book__wrap">
+										<label></label>
+										<div class="input-date">
+											<input value = '27-04-22' class = 'input datepicker' type="text" >
+										</div>
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-o">
+										<label>Model of supercar</label>
+										<select name="form[]" class="book__select-model">
+											<option value="" disabled selected = 'selected' hidden>Surprise me</option>
+											<option value="model1">model1</option>
+											<option value="model2">model2</option>
+											<option value="model3">model3</option>
+										</select>
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-b">
+										<label>Pick-up location</label>
+										<select name="form[]" class="book__select-loc">
+											<option value="" disabled selected = 'selected' hidden>Choose</option>
+											<option value="1">Place 1</option>
+											<option value="2">Place 2</option>
+											<option value="3">Place 3</option>
+										</select>
+									</div>
+									<div class="book__wrap">
+										<label>Pick up time</label>
+										<select name="form[]" class="book__select-time">
+											<option value="time1" selected = 'selected'>09:00</option>
+											<option value="time2">09:00</option>
+											<option value="time3">09:00</option>
+											<option value="time4">09:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-b">
+										<label>Drop off location</label>
+										<select name="form[]" class="book__select-loc">
+											<option value="" disabled selected = 'selected' hidden>Choose</option>
+											<option value="1">Place 1</option>
+											<option value="2">Place 2</option>
+											<option value="3">Place 3</option>
+										</select>
+									</div>
+									<div class="book__wrap">
+										<label>Drop off time</label>
+										<select name="form[]" class="book__select-time">
+											<option value="time1" selected = 'selected'>09:00</option>
+											<option value="time2">09:00</option>
+											<option value="time3">09:00</option>
+											<option value="time4">09:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-t">
+										<label>Number of people</label>
+										<select name="form[]" class="book__select-time">
+											<option value="number1" selected = 'selected'>2</option>
+											<option value="number2">3</option>
+											<option value="number3">4</option>
+											<option value="number4">5</option>
+										</select>
+									</div>
+									<div class="book__wrap book__wrap-t2">
+										<label>Driver</label>
+										<div class="can-toggle">
+											<input id="a" type="checkbox">
+											<label for="a">
+												<div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-o">
+										<label class="book__label">Name</label>
+										<input class = 'input' type = 'text' />
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-o">
+										<label class="book__label">Email</label>
+										<input class = 'input' type = 'text' />
+									</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__wrap book__wrap-o">
+										<label class="book__label">Special requests</label>
+										<textarea class="input"></textarea>
+									</div>
+								</div>
+								<div class="book__form__image" style="background:linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, #0B2034 100%),url(img/packInt/main-img-1.jpg) no-repeat;">
+									<h3 class="book__form__place-name">Machu Picchu</h3>
+									<div class="book__form__place-money">€ 2300</div>
+								</div>
+								<div class="book__form-row">
+									<div class="book__button">
+										<button class="book__btn btn ">Make A Request</button>
+									</div>
+								</div>
+								<span class="book__span">or</span>
+								<div class="book__form-row book__btn-nf">
+									<div class="book__wrap book__btn-n">
+										<button class="book__btn-n btn ">call me back</button>
+									</div>
+									<div class="book__wrap book__btn-n">
+										<button class="btn ">email me back </button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- @import "footer.kit" -->
+	</div>
+	<!-- @import "js.kit" -->
+</body>
+
+</html>

@@ -1,7 +1,18 @@
 .bookUs{
 	&__top{
-		min-height: 240px !important;
-
+		min-height: 350px !important;
+		@include flexbox();
+		text-align: center;
+		align-items: center;
+		@media (max-width: $md3+px) {
+			min-height: 200px !important;
+		}
+		.title{
+			margin-bottom: 0;
+			@media (max-width: $md3+px) {
+				margin-bottom: 20px;
+			}
+		}
 	}
 	&__row{
 		@include flexbox();

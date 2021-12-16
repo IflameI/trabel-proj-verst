@@ -85,8 +85,11 @@ body {
 @import "packages.scss";
 @import "bookWithUs.scss";
 @import "book.scss";
-
 @import "packageInternal.scss";
+@import "customise.scss";
+@import "contact.scss";
+@import "why.scss";
+
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -181,13 +184,14 @@ body {
 	color: #0C0B10;
 	margin-bottom: 85px;
 	@media (max-width: $md4+px) {
-		font-size: 46px;
+		font-size: 45px;
 	}
 
 }
 
 .mainTop{
-	background: url('../img/packages/back-top-cloud.jpg') no-repeat left;
+	background: url('../img/packages/back-top-cloud.jpg') no-repeat bottom;
+	// background: url('../img/packages/back-top-cloud.jpg') no-repeat left;
 	background-size: cover;
 	min-height: 450px;
 	padding-top: 90px;
@@ -199,4 +203,33 @@ body {
 
 .select-options-scroll{
 	cursor: pointer !important; 
+}
+
+.input-date{
+	position: relative;
+	cursor: pointer;
+	&:before{
+		content: '';
+		background: url('../img/bookUs/date-i.svg') center  no-repeat ;
+		width: 17px;
+		height: 16px;
+		position: absolute;
+		top: 20px;
+		left: 14px;
+	}
+	&:after{
+		content: '';
+		position: absolute;top:0;
+		right: 0px;width:45px;height:100%;
+		background: url('../img/arrow-d.svg') center no-repeat;
+	}
+	input{
+		padding: 0 45px 0 35px;
+		font-family: 'Manrope';
+		font-weight: 500;
+		font-size: 18px;
+		color: #0C0B10;
+		line-height: 53px;
+		cursor: pointer;
+	}
 }

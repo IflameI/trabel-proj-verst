@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>BookHotels</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="all"
+	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"    />
+</head>
+
+<body>
+	<div class="wrapper">
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<!-- 
+				html меню с иконкой бургера
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="" class="menu__link"></a></li>
+						</ul>
+					</nav>
+				</div>
+			 -->
+		</div>
+	</div>
+</header>		<section class="book">
+			<div class="book__top mainTop">
+				<div class="container">
+					<h1 class="book__title title">Book Hotels</h1>
+				</div>
+			</div>
+			<div class="book__body mainBody">
+				<div class="container">
+					<div class="book__row">
+						<div class="book__column">
+							<div class="book__img"><img src="img/bookUs/i_02.jpg" alt="bookImg"></div>
+							<p class="book__desc">Do you need to organize an event, a leisure getaway or a business trip?  </p>
+							<p class="book__text">AWe will do it for you! Our exclusive offers in globally renowned hotels and local boutique accommodations will bring your stay to another level. Absolute discretion and highest level comfort and professionalism paired with attention to your every wish are our primary guidelines in selecting the hotel for your next trip. 
+							</p>
+							<ul class="book__list">
+								<li><span><img src="img/bookUs/list_i01.svg" alt="icon"></span>Dedicated 24/7 Travel Advisor</li>
+								<li><span><img src="img/bookUs/i_int.svg" alt="icon"></span>Personalized itinerary</li>
+								<li><span><img src="img/bookUs/i_services.svg" alt="icon"></span>Exclusive services (e.g.event manager, nanny, etc.)
+								</li>
+								<li><span><img src="img/bookUs/i-damage.svg" alt="icon"></span>Accidental damage protection 
+								</li>
+								<li><span><img src="img/bookUs/i-insurance.svg" alt="icon"></span>Travel insurance
+								</li>
+								<li><span><img src="img/bookUs/i-package.svg" alt="icon"></span>Package deals
+								</li>
+							</ul>
+						</div>
+						<div class="book__column">
+							<div class="book__item">
+								<form class="book__form">
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-o">
+											<label>Location</label>
+											<select name="form[]" class="book__select-loc">
+												<option value="" disabled selected = 'selected' hidden>Choose</option>
+												<option value="1">Place 1</option>
+												<option value="2">Place 2</option>
+												<option value="3">Place 3</option>
+											</select>
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-f">
+											<label>Dates</label>
+											<div class="input-date">
+												<input value = '26-04-22' class = 'input datepicker' type="text" >
+											</div>
+										</div>
+										<div class="book__wrap">
+											<label></label>
+											<div class="input-date">
+												<input value = '27-04-22' class = 'input datepicker' type="text" >
+											</div>
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-f">
+											<label>Guests</label>
+											<select name="form[]" class="book__select-cat">
+												<option value="time1" selected = 'selected'>Adults</option>
+												<option value="1">Adults</option>
+												<option value="2">Adults</option>
+												<option value="3">Adults</option>
+											</select>
+										</div>
+										<div class="book__wrap">
+											<label></label>
+											<select name="form[]" class="book__select-year">
+												<option value="time1" selected = 'selected'>Kids (0-10 y.o)</option>
+												<option value="1">Kids (0-10 y.o)</option>
+												<option value="2">Kids (0-10 y.o)</option>
+												<option value="3">Kids (0-10 y.o)</option>
+											</select>
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-f">
+											<label>Number of rooms</label>
+											<select name="form[]" class="book__select-room">
+												<option value="time1" selected = 'selected'>2</option>
+												<option value="1">2</option>
+												<option value="2">2</option>
+												<option value="3">2</option>
+											</select>
+										</div>
+										<div class="book__wrap">
+											<label>Budget</label>
+											<input type="text" class="input">
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-o">
+											<label class="book__label">Name</label>
+											<input class = 'input' type = 'text' />
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-o">
+											<label class="book__label">Email</label>
+											<input class = 'input' type = 'text' />
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__wrap book__wrap-o">
+											<label class="book__label">Special requests</label>
+											<textarea class="input"></textarea>
+										</div>
+									</div>
+									<div class="book__form-row">
+										<div class="book__button">
+											<button class="book__btn btn ">Make A Request</button>
+										</div>
+									</div>
+									<span class="book__span">or</span>
+									<div class="book__form-row book__btn-nf">
+										<div class="book__wrap book__btn-n">
+											<button class="book__btn-n btn ">call me back</button>
+										</div>
+										<div class="book__wrap book__btn-n">
+											<button class="btn ">email me back </button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+<footer class="footer">
+	<div class='container'>
+		<div class="footer__row">
+			<div class="footer__logo"><img src="img/footer/footer-logo.svg" alt="logo"></div>
+			<div class="footer__nav">
+				<ul>
+					<li><a href="">Luxury packages</a></li>
+					<li><a href="">Book with us</a></li>
+					<li class = 'footer__nav-s'><button class="btn">Call Me Back</button></li>
+					<li><a href="">Why Lux Trips</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer__copy">
+				<div class="footer__copy-left">© 2021 All Rights Reserved | Luxtrips</div>
+				<div class="footer__copy-right">Company Site   |   Privacy Policy</div>
+			</div>
+		</div>
+	</div>
+</footer>	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyAe2qamce_RVw-APqN7EqsaGZ2Cm5Zciss"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="js/custom.js" ></script>
+</body>
+
+</html>

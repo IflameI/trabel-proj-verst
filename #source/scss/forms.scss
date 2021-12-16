@@ -86,6 +86,41 @@
 
 				}
 			}
+			&.book__select-cat__select{
+				.select-title__value{
+					position: relative;
+					&:before{
+						content: '';
+						background: url('../img/person.svg') center  no-repeat ;
+						width: 17px;
+						height: 18px;
+						position: absolute;
+						left: 0px;
+						top: 17px;
+					}
+
+				}
+			}
+			&.book__select-year__select{
+				.select-title__value{
+					position: relative;
+					&:before{
+						content: '';
+						background: url('../img/child.svg') center  no-repeat ;
+						width: 20px;
+						height: 18px;
+						position: absolute;
+						left: 0px;
+						top: 17px;
+					}
+
+				}
+			}
+			&.book__select-room__select{
+				.select-title__value{
+					margin-left: 0;
+				}
+			}
 			&.book__select-model__select{
 				.select-title__value{
 					margin-left: -3px;

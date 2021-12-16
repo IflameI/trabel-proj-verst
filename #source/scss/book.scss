@@ -1,7 +1,19 @@
 .book {
 	&__top{
-		min-height: 240px !important;
-
+		// min-height: 240px !important;
+		min-height: 350px !important;
+		@include flexbox();
+		text-align: center;
+		align-items: center;
+		@media (max-width: $md3+px) {
+			min-height: 200px !important;
+		}
+		.title{
+			margin-bottom: 0;
+			@media (max-width: $md3+px) {
+				margin-bottom: 20px;
+			}
+		}
 	}
 	&__row {
 		@include flexbox();
@@ -47,6 +59,7 @@
 	}
 	&__list {
 		padding-top: 40px;
+		align-items: center;
 		@media (max-width: $md2+px) {
 			@include flexbox();
 			flex-wrap:wrap;
@@ -72,6 +85,10 @@
 					margin-right: 0;
 					min-height: 52px;
 					margin-bottom: 5px;
+				}
+				img{
+					max-height: 50px;
+					width:50px;
 				}
 			}
 		}
@@ -218,6 +235,47 @@
 			@media (max-width: $md3+px) {
 				width: 100%;
 			}
+		}
+	}
+	&__form__image {
+		min-height: 231px;
+		background-size: cover !important;
+		border-radius: 10px;
+		text-align: center;
+		@include flexbox();
+		align-items:center;
+		flex-direction:column;
+		justify-content:center;
+	}
+	&__form__place-name {
+		font-size: 60px;
+		line-height: 58px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		@media (max-width: $md3+px) {
+			font-size:42px;
+			line-height: 44px;
+		}
+		@media (max-width: $md4+px) {
+			font-size:32px;
+			line-height: 34px;
+		}
+
+	}
+	&__form__place-money {
+
+		font-size: 44px;
+		line-height: 43px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		@media (max-width: $md3+px) {
+			font-size: 42px;
+			line-height: 44px;
+		}
+		@media (max-width: $md4+px) {
+			font-size:32px;
+			line-height: 34px;
 		}
 	}
 }

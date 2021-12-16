@@ -1,0 +1,43 @@
+.why{
+	overflow: hidden;
+	position: relative;
+    padding-bottom: 552px;
+	&__bg{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		
+		top: -60px;
+
+		background-size: cover;
+		z-index: -1;
+	}
+	&__wrap{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding-top: 220px;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+	}
+	&__title{
+		font-size: 197.951px;
+		line-height: 129px;
+		text-align: center;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #FCFCFC;
+	}
+	&__mont{
+		width: 100%;
+		position: absolute;
+		right: 0px;
+		    top: -120px;
+		z-index: 5;
+		-webkit-transform: scale(0.99);
+		-ms-transform: scale(0.99);
+		transform: scale(0.5);
+	}
+}
