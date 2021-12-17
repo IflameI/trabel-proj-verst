@@ -24,9 +24,11 @@
 	@include scale(0);
 	@include anim(0.3s, 0s);
 	position: relative;
-	max-width: 1230px;
+	max-width: 500px;
 	margin: 0px auto;
 	background-color: #fff;
+	padding: 50px 80px;
+	border-radius:10px;
 }
 .popup-close {
 	width: 15px;

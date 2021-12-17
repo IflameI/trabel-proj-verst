@@ -89,6 +89,7 @@ body {
 @import "customise.scss";
 @import "contact.scss";
 @import "why.scss";
+@import "popup.scss";
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -232,4 +233,18 @@ body {
 		line-height: 53px;
 		cursor: pointer;
 	}
+}
+
+
+
+.ui-datepicker{
+	display: none;
+}
+
+.ui-helper-clearfix{
+	display: none;
+}
+
+.slick-list {
+    padding:0 20% 0 0 !important;
 }

@@ -266,7 +266,10 @@ $('.whouse-content-body').scroll(function(event) {
 	$('.whouse-content__shadow').css({opacity:1-1/100*p});
 });
 */
+$(function() {
+       $("#ui-datepicker-div").wrap('<div style="position:absolute;top:0px;"></div>');
 
+});
 
 //Date picker
 $( ".datepicker" ).datepicker({
