@@ -1,4 +1,7 @@
 .book {
+	.book__body{
+		background: #E2D3CE;
+	}
 	&__top{
 		// min-height: 240px !important;
 		min-height: 350px !important;
@@ -232,7 +235,7 @@
 			@media (max-width: $md1+px) {
 				padding:0 22px;
 			}
-			@media (max-width: $md3+px) {
+			@media (max-width: $md2+px) {
 				width: 100%;
 			}
 		}

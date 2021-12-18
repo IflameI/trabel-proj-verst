@@ -434,7 +434,6 @@
 			max-width: 320px;
 		}
 		&-desc{
-			padding-left: 90px;
 			@media (max-width: $md3+px) {
 				padding-left: 63px;
 			}
@@ -701,6 +700,9 @@
 
 .testimilios-packageInt {
 	padding-top: 60px;
+	.rating-packages__list{
+		transform:unset;
+	}
 	&__item {
 		background: rgba(226, 211, 206, 0.2);
 		padding: 50px;
