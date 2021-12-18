@@ -248,3 +248,14 @@ body {
 .slick-list {
     padding:0 20% 0 0 !important;
 }
+
+
+.rating-packages__list{
+	    transform: rotate(180deg);
+}
+
+.reviews-packageInt{
+	.rating-packages__list{
+		transform:unset;
+	}
+}
