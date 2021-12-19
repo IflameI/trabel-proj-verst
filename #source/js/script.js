@@ -138,15 +138,14 @@ $('body').on('click', '.tab__navitem', function (event) {
 
 
 
-$(function() {
-       $("#ui-datepicker-div").wrap('<div style="position:absolute;top:0px;"></div>');
-
-});
 
 //Date picker
-$( ".datepicker" ).datepicker({
-	dateFormat: 'mm-dd-yy',
-	constrainInput: false
+$( ".datepicker" ).daterangepicker({
+	locale: {
+		format: 'DD-MM-YY'
+	},
+	singleDatePicker: true,
+	showDropdowns: true,
 });
 
 
